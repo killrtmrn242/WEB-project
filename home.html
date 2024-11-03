@@ -1,0 +1,242 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-STORE | Home</title>
+
+    <link href="./styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+</head>
+
+<body class="light-theme">
+    <div id="currentDateTime" class="text-center mt-5"></div>
+
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="./home.html" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none me-5">
+                    <img src="./assets/icon.svg" width="40" height="32" role="img" aria-label="Bootstrap" />
+                </a>
+    
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="./home.html" class="nav-link px-2" tabindex="0">Home</a></li>
+                    <li><a href="./products.html" class="nav-link px-2" tabindex="0">Products</a></li>
+                    <li><a href="./about.html" class="nav-link px-2" tabindex="0">About us</a></li>
+                    <li><a href="./contact.html" id="openForm" class="nav-link px-2" tabindex="0">Contact Us</a></li>
+                    <li><a href="./faq.html" class="nav-link px-2" tabindex="0">FAQ</a></li>
+                </ul>
+    
+                <button id="themeToggleBtn" class="btn btn-secondary ms-2">Toggle Day/Night Theme</button>
+                <audio id="dayNight" src="assets/day_night.mp3"></audio>
+    
+                <!-- Updated Authentication Buttons in Navbar -->
+                <div class="ms-2 d-flex gap-2">
+                    <button id="loginLink" class="btn btn-outline-primary">Login</button>
+                    <button id="logoutLink" class="btn btn-outline-danger" style="display: none;">Logout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div id="welcomeMessage" class="text-center mt-3"></div>
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 id="mainHeading" class="display-4 fw-bold ">Online shopping</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Wide range of gadgets: smartphones, tablets and accessories at favorable prices.
+                    Easy navigation, fast delivery and simple payment. Open the world of technology with us!</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <a href="./products.html" class="btn btn-primary btn-lg px-4 me-sm-3">To Products</a>
+                    <a href="./about.html" class="btn btn-outline-secondary btn-lg px-4">About us</a>
+                </div>
+            </div>
+            <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                    <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2020/12/elec3.jpg"
+                        class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500"
+                        loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        "This is the best store for electronics. Great prices and fantastic customer service!" <hr> <div class="d-flex justify-content-center">John Doe, satisfied customer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="./home.html" class="nav-link px-2 ">Home</a></li>
+                <li class="nav-item"><a href="./products.html" class="nav-link px-2 ">Products</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link px-2 ">About us</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link px-2 ">Contact</a></li>
+                <li class="nav-item"><a href="./faq.html" class="nav-link px-2 ">FAQ</a></li>
+            </ul>
+            <p class="text-center ">© 2024 Company, Inc</p>
+        </footer>
+    </div>
+
+    <!-- Contact Form -->
+    <div id="contactForm" class="container" style="display: none;">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
+
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="./home.html" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none me-5">
+                    <img src="./assets/icon.svg" width="40" height="32" role="img" aria-label="Bootstrap" />
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="./home.html" class="nav-link px-2 " tabindex="0">Home</a></li>
+                    <li><a href="./products.html" class="nav-link px-2  tabindex="0">Products</a></li>
+                    <li><a href="./about.html" class="nav-link px-2 " tabindex="0">About us</a></li>
+                    <li><a href="./contact.html" id="openForm" class="nav-link px-2 " tabindex="0">Contact Us</a></li>
+                    <li><a href="./faq.html" class="nav-link px-2 " tabindex="0">FAQ</a></li>
+                </ul>
+
+                <!-- Authentication links -->
+                <div class="ms-2">
+                    <button id="registerLink" class="btn btn-outline-secondary">Register</button>
+                    <button id="loginLink" class="btn btn-outline-primary">Login</button>
+                    <button id="logoutLink" class="btn btn-outline-danger" style="display: none;">Logout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="welcomeMessage" class="text-center mt-3"></div>
+
+    <!-- Registration/Login Modal -->
+    <div class="modal" id="authModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="authModalLabel">Authentication</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="authForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="authActionButton" type="button" class="btn btn-primary">Register/Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loginLink = document.getElementById("loginLink");
+            const logoutLink = document.getElementById("logoutLink");
+            const welcomeMessage = document.getElementById("welcomeMessage");
+            const currentDateTime = document.getElementById("currentDateTime");
+            const changeBackgroundBtn = document.getElementById("changeBackgroundBtn");
+            const contactForm = document.getElementById("contactForm");
+            const themeToggleBtn = document.getElementById("themeToggleBtn");
+
+            // Проверка существования элементов
+            if (!loginLink || !logoutLink || !welcomeMessage || !currentDateTime || !changeBackgroundBtn || !contactForm || !themeToggleBtn) {
+                console.error("Один или несколько элементов не найдены.");
+                return;
+            }
+
+            // Отображение текущей даты и времени
+            const now = new Date();
+            currentDateTime.innerText = `Current Date and Time: ${now.toLocaleString()}`;
+        
+            
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loginLink = document.getElementById("loginLink");
+            const logoutLink = document.getElementById("logoutLink");
+            const welcomeMessage = document.getElementById("welcomeMessage");
+    
+            // Load username and password upon page load
+            const storedUsername = localStorage.getItem("username");
+            const storedPassword = localStorage.getItem("password");
+    
+            if (storedUsername) {
+                welcomeMessage.innerText = `Welcome, ${storedUsername}!`;
+                loginLink.style.display = "none";
+                logoutLink.style.display = "inline";
+            }
+    
+            // Login button event handler
+            loginLink.addEventListener("click", function() {
+                const username = prompt("Enter your username:");
+                const password = prompt("Enter your password:");
+    
+                if (username && password) {
+                    localStorage.setItem("username", username);
+                    localStorage.setItem("password", password); // Store the password
+                    welcomeMessage.innerText = `Welcome, ${username}!`;
+                    loginLink.style.display = "none";
+                    logoutLink.style.display = "inline";
+                } else {
+                    alert("Please enter both username and password.");
+                }
+            });
+    
+            // Logout button event handler
+            logoutLink.addEventListener("click", function() {
+                localStorage.removeItem("username");
+                localStorage.removeItem("password"); // Remove the password
+                welcomeMessage.innerText = "";
+                loginLink.style.display = "inline";
+                logoutLink.style.display = "none";
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
